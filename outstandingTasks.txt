@@ -1,0 +1,17 @@
+
+1 - Make tilt information accessable to shader
+    a - needs to be conveted to float by dividing by 60 values are -60 - 60 in x
+    and y
+       - i - check tilt info
+       - ii - check that it is passed to the strokeDB
+        iii - check that the conversion to costheta and verticalness is working
+        iv - Figuure out how to mix between explars of strokes.
+         v - figure out how to determine side stroke vs perp stroke.
+
+2 - Make interface to choose color
+    add a uniform value for the color of the stroke
+    use the paint map as the alpha
+3 - Add stroke interpolation
+    a - base on hand and tape method, with fixed steps to reach target position
+    b - target strength is based on the speed of the stroke
+    c - changing directions also increase the attraction to the point
